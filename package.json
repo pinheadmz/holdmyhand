@@ -1,0 +1,26 @@
+{
+  "name": "holdmyhand",
+  "version": "1.0.0",
+  "description": "hsd plugin to block name lookups from the root resolver",
+  "main": "./lib/holdmyhand.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinheadmz/holdmyhand.git"
+  },
+  "keywords": [
+    "hsd",
+    "Handshake"
+  ],
+  "author": "Matthew Zipkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinheadmz/holdmyhand/issues"
+  },
+  "homepage": "https://github.com/pinheadmz/holdmyhand#readme"
+}
