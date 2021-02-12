@@ -13,10 +13,15 @@ const out = {};
 for (const uni of unicodes) {
   const alts = confusables[uni];
   for (const alt of alts) {
-    if (!out[alt.c])
-      out[alt.c] = [];
+    const c = alt.c;
+    const code = c.charCodeAt(0);
+    if (!(code & 0xff80))
+      continue;
 
-     out[alt.c].push(uni);
+    if (!out[c])
+      out[c] = [];
+
+     out[c].push(uni);
   }
 }
 
